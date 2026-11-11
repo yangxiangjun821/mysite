@@ -18,7 +18,7 @@ Visit http://127.0.0.1:8000. A web server is required because `nav.js` fetches t
 - `quotes.html`: 16 original Learning Studio quotations, all readable without JavaScript. The hero randomly selects a quotation on load and on each click without consecutive repeats. The page labels the original writing explicitly.
 - `project.html`: five future project ideas with HTML, CSS and JavaScript filters. `projects.html` preserves the former address with a redirect.
 - `machine.html`: a useless machine that switches itself off after 1.8 seconds.
-- `contact.html`: a feedback drafting exercise that downloads a text file. It does not send messages, use a fictional mailbox, or store drafts on a server.
+- `contact.html`: the author's contact email as a `mailto:` link. There is no form and nothing is sent to or stored on a server.
 
 Navigation markup lives only in `nav.html`; `nav.js` inserts it and binds menu/theme controls. Theme storage is optional. Navigation failure provides a retry action. All five pages share responsive layouts, keyboard focus, a skip link, theme controls and site identity assets.
 

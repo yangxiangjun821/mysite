@@ -8,7 +8,7 @@
 - [x] `project.html` has five project ideas; old `projects.html` links continue to work.
 - [x] Random quotation Hero on initial load and button activation; no immediate repeats.
 - [x] Useless Machine page.
-- [x] JavaScript machine interaction, filters, theme, mobile menu and feedback download.
+- [x] JavaScript machine interaction, filters, theme and mobile menu.
 - [x] Fictional email address removed; no unfinished project demos are presented as implemented.
 - [x] Responsive CSS, keyboard controls, skip links and reduced-motion support.
 - [x] VS Code AI extension installed locally; project extension recommendations provided. Login remains user-managed.

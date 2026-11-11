@@ -19,6 +19,12 @@ async function loadNavigation() {
       menu.setAttribute('aria-expanded', String(open));
       navigation.classList.toggle('open', open);
     });
+    navigation.addEventListener('click', event => {
+      if (event.target.closest('a')) closeMenu();
+    });
+    document.addEventListener('click', event => {
+      if (menu.getAttribute('aria-expanded') === 'true' && !header.contains(event.target)) closeMenu();
+    });
     header.addEventListener('keydown', event => {
       if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
         closeMenu(); menu.focus();

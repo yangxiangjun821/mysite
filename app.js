@@ -31,20 +31,21 @@ document.querySelectorAll('[data-filter]').forEach(button => {
     });
   });
 });
-
 const machineSwitch = document.querySelector('#machine-switch');
 let busy = false;
 machineSwitch?.addEventListener('click', () => {
   if (busy) return;
   busy = true;
-  machineSwitch.setAttribute('aria-disabled', 'true');
+  machineSwitch.disabled = true;
+  machineSwitch.setAttribute('aria-busy', 'true');
   machineSwitch.setAttribute('aria-pressed', 'true');
   machineSwitch.querySelector('b').textContent = 'ON';
   document.querySelector('.machine').classList.add('working');
   document.querySelector('#machine-status').textContent = 'You switched it on. The machine objects…';
   setTimeout(() => {
     machineSwitch.setAttribute('aria-pressed', 'false');
-    machineSwitch.setAttribute('aria-disabled', 'false');
+    machineSwitch.disabled = false;
+    machineSwitch.removeAttribute('aria-busy');
     machineSwitch.querySelector('b').textContent = 'OFF';
     document.querySelector('.machine').classList.remove('working');
     document.querySelector('#machine-status').textContent = 'Order restored. Nothing was accomplished.';
@@ -52,21 +53,3 @@ machineSwitch?.addEventListener('click', () => {
   }, 1800);
 });
 
-document.querySelector('#contact-form')?.addEventListener('submit', event => {
-  event.preventDefault();
-  const form = event.currentTarget;
-  const name = form.elements.name.value.trim();
-  const message = form.elements.message.value.trim();
-  if (!name || !message) {
-    document.querySelector('#form-note').textContent = 'Please enter a name and a message, not just spaces.';
-    (!name ? form.elements.name : form.elements.message).focus();
-    return;
-  }
-  const blob = new Blob(['Learning Studio feedback\n\nFrom: ' + name + '\n\n' + message + '\n'], {type: 'text/plain;charset=utf-8'});
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement('a');
-  link.href = url; link.download = 'learning-studio-feedback.txt';
-  document.body.append(link); link.click(); link.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-  document.querySelector('#form-note').textContent = 'Your draft download has started. Share the file yourself when you are ready; nothing has been sent.';
-});

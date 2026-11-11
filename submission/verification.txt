@@ -22,7 +22,7 @@ contact.html: 768x1024 layout, navigation, images OK
 Five project ideas; all category filters passed
 Machine returns from ON to OFF
 Theme persists across reload
-Feedback download contains entered Unicode text safely
+Contact page shows the author email as a mailto link
 Old projects.html link redirects correctly
 Navigation failure and retry recover successfully
 No uncaught JavaScript errors

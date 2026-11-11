@@ -14,7 +14,7 @@ Learning Studio is a small website built for the Web Technology course. It intro
 
 The home page introduces the site with an original diagram of the three web languages. The Quotes page contains sixteen original Learning Studio quotations about learning, accessibility and making websites. Its featured quotation is selected randomly, and the Projects page presents five ideas with category filters.
 
-The Useless Machine demonstrates a timed JavaScript interaction: visitors turn it on, and it switches itself off. A feedback drafting page lets visitors write and download a text file to share themselves. The site also includes a mobile menu and a light and dark theme that remembers the visitor's choice when browser storage is available.
+The Useless Machine demonstrates a timed JavaScript interaction: visitors turn it on, and it switches itself off. A contact page gives the author's email address so visitors can send ideas and feedback directly. The site also includes a mobile menu and a light and dark theme that remembers the visitor's choice when browser storage is available.
 
 The website uses semantic HTML, responsive CSS and plain JavaScript without a framework. A shared navigation file keeps links consistent across pages. Local artwork and icons give the project a recognizable identity, while keyboard controls, visible focus and reduced-motion support make the experiments easier to use.
 

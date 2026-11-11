@@ -1,0 +1,28 @@
+index.html: 1920x1080 layout, navigation, images OK
+quotes.html: 1920x1080 layout, navigation, images OK
+project.html: 1920x1080 layout, navigation, images OK
+machine.html: 1920x1080 layout, navigation, images OK
+contact.html: 1920x1080 layout, navigation, images OK
+index.html: 375x812 layout, navigation, images OK
+quotes.html: 375x812 layout, navigation, images OK
+project.html: 375x812 layout, navigation, images OK
+machine.html: 375x812 layout, navigation, images OK
+contact.html: 375x812 layout, navigation, images OK
+index.html: 320x812 layout, navigation, images OK
+quotes.html: 320x812 layout, navigation, images OK
+project.html: 320x812 layout, navigation, images OK
+machine.html: 320x812 layout, navigation, images OK
+contact.html: 320x812 layout, navigation, images OK
+index.html: 768x1024 layout, navigation, images OK
+quotes.html: 768x1024 layout, navigation, images OK
+project.html: 768x1024 layout, navigation, images OK
+machine.html: 768x1024 layout, navigation, images OK
+contact.html: 768x1024 layout, navigation, images OK
+16 quotations; 40 draws with no consecutive repeat
+Five project ideas; all category filters passed
+Machine returns from ON to OFF
+Theme persists across reload
+Feedback download contains entered Unicode text safely
+Old projects.html link redirects correctly
+Navigation failure and retry recover successfully
+No uncaught JavaScript errors
